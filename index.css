@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+
+html {
+    width: 100%;
+    font-size: 62.5;
+    font-family: sans-serif;
+}
+
+
+
+#cabecalho {
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 65px;
+    background: #F2DB1E;
+    border-bottom: 1px solid #4d4d4d;
+    /*border: 1px solid red;*/
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1220px;
+
+
+    /* border: 1px solid red;*/
+}
+
+.logo {
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: white;
+    background: black;
+    padding: 1rem;
+
+
+}
+
+.list_bar a {
+    padding: 15px;
+    font-size: 1.2rem;
+    margin: 0px 10px;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+.list_bar a:hover {
+    color: rgb(75, 75, 75);
+}
+
+a {
+    height: fit-content;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navBar__list {
+    display: flex;
+}
+
+#textsection {
+    display: flex;
+    justify-content: end;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    max-height: 91vh;
+    height: 91vh;
+    background: #F2DB1E;
+
+    /*border: 1px solid red;*/
+}
+
+.myName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.persona {
+    width: 50%;
+    border-radius: 270.618px;
+    padding: 0 2rem;
+
+}
+
+h1.text1 {
+    padding: 3rem 0;
+    word-wrap: break-word;
+    color: #000000;
+    width: 26rem;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+h1.text2 {
+    padding: 3rem 0;
+    display: flex;
+    color: #000000;
+    word-wrap: break-word;
+    width: 30rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#paragrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+#barra {
+    background-color: #000000;
+    width: 10rem;
+    height: 1.2rem;
+}
+
+aside {
+
+    position: fixed;
+    right: 0;
+    top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.iconsLink li a img {
+    margin: 15px 0 15px 0;
+}
+
+.iconsLink li a img:hover {
+    width: 46px;
+}
+
+#habilidades {
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    background-color: #3D3D3D;
+}
+
+#habilidadeswidth {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+    padding: 3rem;
+    width: 100%;
+    max-width: 1220px;
+
+
+}
+
+.tituloHabilidades {
+    padding: 1rem 0px 1rem 0px;
+    color: #0E918C;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.tituloHabilidades1 {
+    padding: 2rem 0px 2rem 0px;
+    color: #0E918C;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+#apresentacao {
+    margin: 0px 2rem;
+}
+
+#apresentacao h2 {
+    padding: 0rem 0px 2rem 0px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#apresentacao p {
+
+    font-size: 1.5rem;
+    width: 32rem;
+    color: white;
+}
+
+#stacks {
+    display: flex;
+    flex-direction: column;
+}
+
+#futurosestudos {
+    display: flex;
+    flex-direction: column;
+}
+
+#skill {
+    border-radius: 5px;
+    max-width: 150px;
+    width: 100px;
+    min-width: fit-content;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #1B1B1B;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+#skill:hover {
+
+    background-color: #a3a3a3;
+    color: #3D3D3D;
+}
+
+iframe {
+    display: block;
+}
+
+.titulosProjeto {
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5rem 0px .5rem 0px;
+    text-align: center;
+}
+
+.titulosProjeto:hover {
+    width: fit-content;
+    word-break: break-all;
+    text-decoration: underline;
+}
+
+
+
+.descricaoProjetos {
+    font-size: 17px;
+    width: 320px;
+    font-weight: 500;
+    color: white;
+    margin: 20px 0;
+}
+
+.projetosImagens {
+
+    width: 320px;
+    height: 200px;
+    border: 0;
+}
+
+
+#projetosid {
+    display: flex;
+    height: fit-content;
+
+    background-color: #3D3D3D;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 370px;
+    height: 400px;
+}
+
+#contatos {
+
+    background-color: #3D3D3D;
+}
+
+#contatosWidth {
+    display: flex;
+    flex-direction: column;
+    max-width: 1220px;
+    height: fit-content;
+}
