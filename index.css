@@ -89,25 +89,23 @@ ul {
     flex-direction: row-reverse;
     flex-wrap: wrap;
 
-    height: 91vh;
     background: #F2DB1E;
 
     /*border: 1px solid red;*/
 }
 
 .myName {
-    border: 1px solid red;
-    height: fit-content;
     width: fit-content;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin: 10px 0px 10px 0px;
 
 
 }
 
 .persona {
+
     width: 50%;
     border-radius: 270.618px;
     padding: 0 2rem;
@@ -138,6 +136,7 @@ h1.text2 {
 }
 
 #paragrafo {
+    text-align: justify;
     display: flex;
     flex-direction: column;
 }
@@ -163,11 +162,12 @@ aside {
 }
 
 .iconsLink li a img {
+    width: 30px;
     margin: 15px 0 15px 0;
 }
 
 .iconsLink li a img:hover {
-    width: 46px;
+    width: 35px;
 }
 
 #habilidades {
@@ -182,7 +182,7 @@ aside {
     display: flex;
     flex-wrap: wrap;
     align-items: end;
-    justify-content: center;
+    justify-content: space-around;
     padding: 3rem;
     width: 100%;
     max-width: 1220px;
@@ -225,7 +225,7 @@ aside {
 }
 
 #apresentacao p {
-
+    text-align: justify;
     font-size: 1.5rem;
     width: 32rem;
     color: white;
