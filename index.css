@@ -142,11 +142,11 @@ aside {
     border: 1px solid;
 }
 
-#conteudoaside {}
+
 
 .persona {
 
-    width: 95%;
+
     border-radius: 270.618px;
 
 
@@ -192,8 +192,9 @@ h1.text2 {
 
     display: flex;
     flex-wrap: wrap;
+
     justify-content: center;
-    height: 70vh;
+
     background-color: #3D3D3D;
 }
 
@@ -204,6 +205,8 @@ h1.text2 {
     justify-content: space-around;
     padding: 3rem;
     width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
     max-width: 1220px;
 }
 
@@ -255,6 +258,7 @@ h1.text2 {
     display: inline-block;
     color: white;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 #skill:hover {
@@ -279,14 +283,23 @@ h1.text2 {
 }
 
 #projetosid {
+
+    background-color: #202020;
+
+}
+
+
+
+#projetos {
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: fit-content;
     background-color: #202020;
     justify-content: center;
     align-items: center;
 
-    padding: 0px 0px 20px 0px;
 }
 
 .projetos {
@@ -297,14 +310,7 @@ h1.text2 {
     margin: 10px;
     width: 370px;
     height: 400px;
-}
 
-#projetoswidth {
-    width: 1400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .titulosProjeto {
@@ -347,7 +353,7 @@ h1.text2 {
 }
 
 #contatosWidth {
-    width: 1220px;
+    width: 1400px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -360,6 +366,8 @@ h1.text2 {
     width: 50%;
     background-color: #3D3D3D;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
 }
@@ -379,8 +387,8 @@ form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 500px;
-    height: 600px;
+    width: 30rem;
+    height: fit-content;
     border-radius: 5px;
     padding: 20px;
     background-color: #141414;
@@ -438,10 +446,12 @@ label {
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
     width: 50%;
 }
 
 .titulosContact {
+    width: 100%;
     height: fit-content;
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
@@ -454,7 +464,7 @@ label {
 #paragrafocontatos p {
     font-family: 'IBM Plex Sans', sans-serif;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.7rem;
     margin: 0px 20px;
     color: white;
 }
@@ -494,28 +504,7 @@ label {
         display: none;
     }
 
-    h1.text1 {
-        padding: 3rem 0;
-        word-wrap: break-word;
-        color: #000000;
-        width: 26rem;
-        font-family: IBM Plex Sans;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 3rem;
-    }
 
-    h1.text2 {
-        padding: 3rem 0;
-        display: flex;
-        color: #000000;
-        width: 30rem;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 2.5rem;
-
-    }
 
     #paragrafo {
         text-align: justify;
@@ -527,5 +516,122 @@ label {
         background-color: #000000;
         width: 10rem;
         height: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1048px) {
+
+
+    #conteudoaside {
+        justify-content: center;
+    }
+
+    .hero {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    h1.text1 {
+        width: fit-content;
+    }
+
+    h1.text2 {
+        width: fit-content;
+    }
+
+    .persona {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero {
+        width: 0;
+    }
+
+    #paragrafo {
+        width: fit-content;
+    }
+
+    #conteudoaside {
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #containerWidthHero {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #contatos {}
+
+    #contatosWidth {
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    #contacts {
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .hero {
+        width: 0;
+    }
+
+    #paragrafo {
+        width: fit-content;
+    }
+
+    #conteudoaside {
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #containerWidthHero {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    #apresentacao p {
+        word-break: break-all;
+        text-align: justify;
+        font-size: 15px;
+        width: fit-content;
+        color: white;
+    }
+
+    #contacts {
+        word-break: break-all;
+        width: 60%;
+    }
+
+    #contacts a {
+        word-break: break-all;
+        width: 60%;
+    }
+
+    form {
+        width: 300px;
+    }
+
+    #submitarea {
+        width: 200px;
+    }
+
+    .titulosContact {
+        font-size: 20px;
     }
 }
