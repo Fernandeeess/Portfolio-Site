@@ -88,7 +88,7 @@ ul {
     justify-content: center;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    max-height: 91vh;
+
     height: 91vh;
     background: #F2DB1E;
 
@@ -96,7 +96,11 @@ ul {
 }
 
 .myName {
+    border: 1px solid red;
+    height: fit-content;
+    width: fit-content;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
@@ -168,8 +172,9 @@ aside {
 
 #habilidades {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    max-height: fit-content;
+    height: fit-content;
     background-color: #3D3D3D;
 }
 
@@ -186,13 +191,14 @@ aside {
 }
 
 .tituloHabilidades {
-    padding: 1rem 0px 1rem 0px;
+    padding: 2rem 0px 2rem 0px;
     color: #0E918C;
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 3rem;
     display: inline-block;
+    width: fit-content;
 }
 
 .tituloHabilidades1 {
@@ -312,14 +318,81 @@ iframe {
     height: 400px;
 }
 
-#contatos {
 
+form {
+    width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #141414;
+    color: #989898;
+    box-shadow: rgb(0 0 0 / 90%) 0px 8px 32px 0px;
+
+}
+
+form input,
+textarea {
+
+    background-color: #141414;
+    width: 400px;
+    margin: 10px;
+
+    border-radius: 5px;
+    border: 2px solid rgb(145, 145, 145);
+}
+
+#contatos {
+    display: flex;
     background-color: #3D3D3D;
+    align-items: center;
+    justify-content: center;
 }
 
 #contatosWidth {
+    width: 1220px;
+    height: fit-content;
+
+}
+
+#formcontato {
+    width: fit-content;
+    background-color: #3D3D3D;
     display: flex;
     flex-direction: column;
-    max-width: 1220px;
-    height: fit-content;
+
+
+}
+
+#nome {
+    height: 35px;
+}
+
+#email {
+    height: 35px;
+}
+
+#submit {
+
+    width: 300px;
+    padding: 10px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    border: #0E918C 1px solid;
+}
+
+#submit:hover {
+    transition: 1ms;
+    background: #0E918C;
+}
+
+#submitarea {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    padding: 10px;
+    display: block;
+
+
 }
