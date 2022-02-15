@@ -13,12 +13,15 @@ html {
 }
 
 #cabecalho {
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
     height: 65px;
     background: #F2DB1E;
     border-bottom: 1px solid #4d4d4d;
+    position: fixed;
+    top: 0;
     /*border: 1px solid red;*/
 }
 
@@ -71,16 +74,26 @@ a {
     text-decoration: none;
 }
 
-#conteudo {}
-
-#containerWidth {
-    display: flex;
-    justify-content: center;
+#containerWidthHero {
+    width: 100%;
     background: #F2DB1E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     width: 1220px;
+    height: fit-content;
+    margin: 5rem;
+
+
 }
 
 aside {
@@ -122,18 +135,20 @@ aside {
 }
 
 .personawidth {
-    width: 50%;
+    width: 0%;
     display: flex;
     align-items: center;
     margin: 10px 0px 10px 0px;
     border: 1px solid;
 }
 
+#conteudoaside {}
+
 .persona {
 
-    width: 50%;
+    width: 95%;
     border-radius: 270.618px;
-    padding: 0 2rem;
+
 
 }
 
@@ -174,17 +189,18 @@ h1.text2 {
 }
 
 #habilidades {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: fit-content;
+    height: 70vh;
     background-color: #3D3D3D;
 }
 
 #habilidadeswidth {
     display: flex;
     flex-wrap: wrap;
-    align-items: end;
+    align-items: center;
     justify-content: space-around;
     padding: 3rem;
     width: 100%;
@@ -264,11 +280,12 @@ h1.text2 {
 
 #projetosid {
     display: flex;
+    flex-direction: column;
     height: fit-content;
     background-color: #202020;
     justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
+    align-items: center;
+
     padding: 0px 0px 20px 0px;
 }
 
@@ -276,9 +293,18 @@ h1.text2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row;
     margin: 10px;
     width: 370px;
     height: 400px;
+}
+
+#projetoswidth {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .titulosProjeto {
