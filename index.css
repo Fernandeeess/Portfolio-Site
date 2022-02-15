@@ -275,6 +275,17 @@ iframe {
     text-align: center;
 }
 
+.titulosContact {
+    height: fit-content;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 32px 0;
+
+    text-align: center;
+}
+
 .titulosProjeto:hover {
     width: fit-content;
     word-break: break-all;
@@ -302,11 +313,11 @@ iframe {
 #projetosid {
     display: flex;
     height: fit-content;
-
-    background-color: #3D3D3D;
+    background-color: #202020;
     justify-content: center;
     align-items: start;
     flex-wrap: wrap;
+    padding: 0px 0px 20px 0px;
 }
 
 .projetos {
@@ -335,11 +346,11 @@ form {
 
 form input,
 textarea {
-
+    padding: 10px;
     background-color: #141414;
     width: 400px;
     margin: 10px;
-
+    color: white;
     border-radius: 5px;
     border: 2px solid rgb(145, 145, 145);
 }
@@ -347,13 +358,18 @@ textarea {
 #contatos {
     display: flex;
     background-color: #3D3D3D;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
     padding: 0px 0px 20px 0px;
+
 }
 
 #contatosWidth {
     width: 1220px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     height: fit-content;
 
 }
@@ -363,8 +379,8 @@ textarea {
     width: fit-content;
     background-color: #3D3D3D;
     display: flex;
-
     flex-direction: column;
+
 }
 
 #nome {
@@ -401,4 +417,62 @@ label {
     display: block;
     font-size: 20px;
 
+}
+
+#contacts {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 500px;
+}
+
+.imgiconscontact {
+    width: 70px;
+}
+
+.contactorganizate {
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.contactorganizate a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.contactorganizate a:hover {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.contactorganizate img {
+    margin: 0px 20px;
+}
+
+
+
+#paragrafocontatos p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: justify;
+    font-size: 1rem;
+    margin: 0px 20px;
+    color: white;
+}
+
+#tituloContato {
+    padding: 2rem 0px 2rem 0px;
+    color: #0E918C;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    display: inline-block;
+    width: fit-content;
 }
