@@ -620,7 +620,7 @@ label {
 
     #contacts a {
         word-break: break-all;
-        width: 60%;
+
     }
 
     form {
@@ -633,5 +633,23 @@ label {
 
     .titulosContact {
         font-size: 20px;
+    }
+
+    #paragrafocontatos p {
+        font-size: 20px;
+    }
+
+    a {
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    h1.text1 {
+        font-size: 40px;
+    }
+
+    h1.text2 {
+        font-size: 40px;
     }
 }
