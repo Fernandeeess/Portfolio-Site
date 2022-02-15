@@ -388,8 +388,6 @@ label {
     height: 35px;
 }
 
-
-
 #submit {
 
     width: 300px;
@@ -464,13 +462,6 @@ label {
 .imgiconscontact {
     width: 70px;
 }
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 942px) {
     #navBar {
