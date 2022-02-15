@@ -652,4 +652,9 @@ label {
     h1.text2 {
         font-size: 40px;
     }
+
+    .container {
+        width: fit-content;
+        max-width: 1220px;
+    }
 }
