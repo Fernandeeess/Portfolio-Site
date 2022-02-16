@@ -47,7 +47,6 @@ html {
 
 }
 
-#navBar {}
 
 #navBar__list {
     display: flex;
@@ -142,8 +141,6 @@ aside {
     border: 1px solid;
 }
 
-
-
 .persona {
 
 
@@ -208,10 +205,6 @@ h1.text2 {
     height: fit-content;
     flex-wrap: wrap;
     max-width: 1220px;
-}
-
-#apresentacao {
-    margin: 0px 2rem;
 }
 
 #apresentacao h2 {
@@ -279,6 +272,7 @@ h1.text2 {
     font-style: normal;
     font-weight: bold;
     font-size: 3rem;
+
     display: inline-block;
 }
 
@@ -287,8 +281,6 @@ h1.text2 {
     background-color: #202020;
 
 }
-
-
 
 #projetos {
 
@@ -545,9 +537,7 @@ label {
 }
 
 @media only screen and (max-width: 1300px) {
-    .hero {
-        width: 0;
-    }
+    .hero {}
 
     #paragrafo {
         width: fit-content;
@@ -580,6 +570,12 @@ label {
 
     #contacts {
         width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 1336px) {
+    h1.text1 {
+        width: 500px;
     }
 }
 
