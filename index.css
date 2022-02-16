@@ -276,11 +276,21 @@ h1.text2 {
     display: inline-block;
 }
 
-#projetosid {
+#projetoswidth {
 
-    background-color: #202020;
+    width: 1220px;
+
 
 }
+
+#containerProjetos {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #202020;
+}
+
 
 #projetos {
 
@@ -620,7 +630,7 @@ label {
     }
 
     form {
-        width: 300px;
+        width: 400px;
     }
 
     #submitarea {
@@ -652,5 +662,16 @@ label {
     .container {
         width: fit-content;
         max-width: 1220px;
+    }
+}
+
+@media only screen and (max-width: 460px) and (min-width: 0px) {
+
+    h1.text1 {
+        width: 300px;
+    }
+
+    form {
+        width: 300px;
     }
 }
