@@ -3,50 +3,44 @@
 * {
     padding: 0px;
     margin: 0px;
-
 }
 
 html {
     width: 100%;
-    font-size: 62.5;
+    font-size: 62.5%;
     font-family: sans-serif;
 }
 
+body {}
+
 #cabecalho {
-    width: 100%;
-    margin: 0px;
     display: flex;
-    justify-content: space-evenly;
-    height: 65px;
-    background: #F2DB1E;
-    border-bottom: 1px solid #4d4d4d;
-    position: fixed;
-    top: 0;
-    /*border: 1px solid red;*/
+    justify-content: center;
+    background: #000000;
+    height: fit-content;
+    border-bottom: 1px solid black;
+
 }
 
 .container {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     max-width: 1220px;
-
-
     /* border: 1px solid red;*/
 }
 
-.logo {
-    display: inline-block;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    color: white;
-    background: black;
-    padding: 1rem;
-
-
+#logolink {
+    padding: 10px 0px 10px 0px;
 }
 
+#logo {
+    width: 250px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px;
+}
 
 #navBar__list {
     display: flex;
@@ -55,17 +49,16 @@ html {
 }
 
 .list_bar a {
-    padding: 15px;
-    font-size: 1.2rem;
-    margin: 0px 10px;
-    color: black;
+    padding: 0px 15px 24px 15px;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
     font-weight: 400;
     text-decoration: none;
-
 }
 
 .list_bar a:hover {
-    color: rgb(75, 75, 75);
+
+    border-bottom: 3px solid white;
 }
 
 a {
@@ -73,50 +66,62 @@ a {
     text-decoration: none;
 }
 
-#containerWidthHero {
-    width: 100%;
-    background: #F2DB1E;
+#herobackgroudn {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: #F2DB1E;
+
+
 }
 
-.hero {
+#containerWidthHero {
 
+    width: 60%;
+
+    max-width: 1220px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    width: 1220px;
-    height: fit-content;
-    margin: 5rem;
-
+    max-height: 700px;
+    min-height: 700px;
+    height: 100%;
+    background-color: #F2DB1E;
 
 }
 
 aside {
-
     position: fixed;
+    flex-direction: column;
     right: 0;
     top: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 4rem;
+    width: fit-content;
+
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.1)
 }
 
-.iconsLink li a img {
-    width: 30px;
-    margin: 15px 0 15px 0;
+aside.iconsLink {
+    width: 60px;
+    height: 180px;
 }
 
-.iconsLink li a img:hover {
+.iconsLink a {
+    margin: 10px;
+}
+
+.iconsLink a img {
+    width: 30px;
+}
+
+.iconsLink a img:hover {
     width: 35px;
 }
+
 
 #textsection {
     display: flex;
@@ -127,26 +132,24 @@ aside {
     display: flex;
     justify-content: center;
     flex-direction: row;
-
     border: 1px solid;
-
-
 }
 
-.personawidth {
-    width: 0%;
+#conteudoaside {
+    display: inline;
+    width: fit-content;
+}
+
+#personawidth {
     display: flex;
-    align-items: center;
-    margin: 10px 0px 10px 0px;
-    border: 1px solid;
+    flex-wrap: wrap;
 }
 
 .persona {
-
-
+    width: 100%;
     border-radius: 270.618px;
-
-
+    min-width: 400px;
+    max-width: 500px;
 }
 
 #paragrafo {
@@ -186,12 +189,9 @@ h1.text2 {
 }
 
 #habilidades {
-
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
-
     background-color: #3D3D3D;
 }
 
@@ -209,7 +209,6 @@ h1.text2 {
 
 #apresentacao h2 {
     padding: 0rem 0px 2rem 0px;
-
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
     font-size: 2rem;
@@ -255,7 +254,6 @@ h1.text2 {
 }
 
 #skill:hover {
-
     background-color: #a3a3a3;
     color: #3D3D3D;
 }
@@ -272,28 +270,22 @@ h1.text2 {
     font-style: normal;
     font-weight: bold;
     font-size: 3rem;
-
     display: inline-block;
 }
 
 #projetoswidth {
-
-    width: 1220px;
-
-
+    width: 100%;
+    max-width: 1220px;
 }
 
 #containerProjetos {
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #202020;
 }
 
-
 #projetos {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -301,7 +293,6 @@ h1.text2 {
     background-color: #202020;
     justify-content: center;
     align-items: center;
-
 }
 
 .projetos {
@@ -312,11 +303,9 @@ h1.text2 {
     margin: 10px;
     width: 370px;
     height: 400px;
-
 }
 
 .titulosProjeto {
-
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
     font-size: 2rem;
@@ -332,7 +321,7 @@ h1.text2 {
 }
 
 .descricaoProjetos {
-    font-size: 17px;
+    font-size: 1.6rem;
     width: 320px;
     font-weight: 500;
     color: white;
@@ -340,7 +329,6 @@ h1.text2 {
 }
 
 .projetosImagens {
-
     width: 320px;
     height: 200px;
     border: 0;
@@ -355,12 +343,12 @@ h1.text2 {
 }
 
 #contatosWidth {
-    width: 1400px;
+    width: 100%;
+    max-width: 1220px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     height: fit-content;
-
 }
 
 #formcontato {
@@ -371,7 +359,6 @@ h1.text2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 #tituloContato {
@@ -389,7 +376,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 30rem;
+    width: 95%;
     height: fit-content;
     border-radius: 5px;
     padding: 20px;
@@ -400,9 +387,10 @@ form {
 
 form input,
 textarea {
+
     padding: 10px;
     background-color: #141414;
-    width: 400px;
+    width: 95%;
     margin: 10px;
     color: white;
     border-radius: 5px;
@@ -413,7 +401,8 @@ label {
     color: white;
     padding: 10px;
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
+
 }
 
 #nome {
@@ -424,28 +413,8 @@ label {
     height: 35px;
 }
 
-#submit {
-
-    width: 300px;
-    padding: 10px;
-    height: 35px;
-    color: white;
-    font-weight: bold;
-    border: #0E918C 1px solid;
-}
-
-#submit:hover {
-    transition: 1ms;
-    background: #0E918C;
-}
-
-#submitarea {
-    display: flex;
-    justify-content: center;
-}
 
 #contacts {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -478,14 +447,36 @@ label {
     justify-content: left;
     align-items: center;
     justify-content: left;
+}
 
+#nomesvg {
+    width: 300px;
 }
 
 .contactorganizate a {
-    font-size: 20px;
+    word-break: break-all;
+    font-size: 2rem;
     color: white;
     text-decoration: none;
+}
 
+#submit {
+    width: 90%;
+    padding: 10px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    border: #0E918C 1px solid;
+}
+
+#submit:hover {
+    transition: 1ms;
+    background: #0E918C;
+}
+
+#submitarea {
+    display: flex;
+    justify-content: center;
 }
 
 .contactorganizate a:hover {
@@ -498,29 +489,97 @@ label {
 }
 
 .imgiconscontact {
-    width: 70px;
+    width: 10%;
+    max-width: 60px;
+    min-width: 50px;
 }
 
+/*Media Queries observa breakpoints*/
+@media(max-width:780px) {
+    #contatosWidth {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #formcontato {
+        width: 80%;
+    }
+
+    #contacts {
+        width: 80%;
+    }
+}
+
+@media(max-width:890px) {
+    .persona {
+        display: none;
+    }
+
+    #containerWidthHero {
+        width: 100%;
+        max-width: 1220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 700px;
+        min-height: 700px;
+        height: 100%;
+        background-color: #F2DB1E;
+    }
+
+    #nomesvg {
+        width: 400px;
+    }
+
+    #navBar__list {
+        display: none;
+    }
+}
+
+@media (max-width:439px) {
+    #nomesvg {
+        width: 300px;
+    }
+}
+
+@media (max-width:375px) {
+    #formcontato {
+        width: 80%;
+    }
+
+    #contacts {
+        width: 80%;
+    }
+}
+
+@media (max-width:320px) {
+    #formcontato {
+        width: 80%;
+    }
+
+    #contacts {
+        width: 80%;
+    }
+}
+
+@media(max-width:880px)
+/*
 @media only screen and (max-width: 942px) {
     #navBar {
         display: none;
     }
-
-
-
     #paragrafo {
         text-align: justify;
         display: flex;
         flex-direction: column;
     }
-
     #barra {
         background-color: #000000;
         width: 10rem;
         height: 1.2rem;
     }
 }
-
 @media only screen and (max-width: 1048px) {
 
 
@@ -545,7 +604,6 @@ label {
         display: none;
     }
 }
-
 @media only screen and (max-width: 1300px) {
     .hero {}
 
@@ -582,13 +640,11 @@ label {
         width: fit-content;
     }
 }
-
 @media only screen and (max-width: 1336px) {
     h1.text1 {
         width: 500px;
     }
 }
-
 @media only screen and (max-width: 630px) {
     .hero {
         width: 0;
@@ -649,7 +705,6 @@ label {
         width: fit-content;
     }
 }
-
 @media only screen and (max-width: 445px) {
     h1.text1 {
         font-size: 40px;
@@ -664,7 +719,6 @@ label {
         max-width: 1220px;
     }
 }
-
 @media only screen and (max-width: 460px) and (min-width: 0px) {
 
     h1.text1 {
@@ -675,3 +729,4 @@ label {
         width: 300px;
     }
 }
+*/
