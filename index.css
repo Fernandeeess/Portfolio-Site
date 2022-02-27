@@ -570,6 +570,15 @@ label {
         width: 80%;
     }
 
+    .descricaoProjetos {
+        word-wrap: break-word;
+        font-size: 1.6rem;
+        width: 300px;
+        font-weight: 500;
+        color: white;
+        margin: 20px 0;
+    }
+
     .projetosImagens {
         width: 300px;
         height: 180px;
