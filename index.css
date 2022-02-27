@@ -31,7 +31,7 @@ html {
     /* border: 1px solid red;*/
 }
 
-#logolink {}
+
 
 #logo {
 
@@ -69,14 +69,11 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #F2DB1E;
-
-
 }
 
 #containerWidthHero {
 
     width: 60%;
-
     max-width: 1220px;
     display: flex;
     justify-content: space-between;
@@ -244,6 +241,7 @@ h1.text2 {
     color: white;
     font-weight: bold;
     flex-wrap: wrap;
+    font-size: 1.3rem;
 }
 
 #skill:hover {
@@ -572,7 +570,18 @@ label {
         width: 80%;
     }
 
+    .projetosImagens {
+        width: 300px;
+        height: 180px;
+        border: 0;
+    }
 
+    #apresentacao p {
+        text-align: justify;
+        font-size: 1.8rem;
+        width: 29rem;
+        color: white;
+    }
 
     #contacts {
         width: 80%;
