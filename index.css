@@ -207,17 +207,11 @@ h1.text2 {
     max-width: 1220px;
 }
 
-#apresentacao h2 {
-    padding: 0rem 0px 2rem 0px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-}
+
 
 #apresentacao p {
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 32rem;
     color: white;
 }
@@ -557,6 +551,8 @@ label {
     #formcontato {
         width: 80%;
     }
+
+
 
     #contacts {
         width: 80%;
