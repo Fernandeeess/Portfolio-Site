@@ -31,14 +31,13 @@ html {
     /* border: 1px solid red;*/
 }
 
-#logolink {
-    padding: 10px 0px 10px 0px;
-}
+#logolink {}
 
 #logo {
+
     width: 250px;
-    margin: 10px 0px 10px 0px;
-    padding: 10px 0px;
+
+    padding: 20px 0px;
 }
 
 #navBar__list {
@@ -85,6 +84,7 @@ a {
     max-height: 700px;
     min-height: 700px;
     height: 100%;
+    margin: 40px 0;
     background-color: #F2DB1E;
 
 }
@@ -325,6 +325,7 @@ h1.text2 {
 }
 
 .descricaoProjetos {
+    word-wrap: break-word;
     font-size: 1.6rem;
     width: 320px;
     font-weight: 500;
@@ -377,6 +378,7 @@ h1.text2 {
 }
 
 form {
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -388,6 +390,7 @@ form {
     color: #989898;
     box-shadow: rgb(0 0 0 / 90%) 0px 8px 32px 0px;
 }
+
 
 form input,
 textarea {
@@ -411,10 +414,12 @@ label {
 
 #nome {
     height: 35px;
+    font-size: 1.6rem;
 }
 
 #email {
     height: 35px;
+    font-size: 1.6rem;
 }
 
 
@@ -423,6 +428,10 @@ label {
     flex-wrap: wrap;
     justify-content: start;
     width: 50%;
+}
+
+#mensagem {
+    font-size: 1.6rem;
 }
 
 .titulosContact {
@@ -454,7 +463,7 @@ label {
 }
 
 #nomesvg {
-    width: 300px;
+    width: 400px;
 }
 
 .contactorganizate a {
@@ -465,6 +474,7 @@ label {
 }
 
 #submit {
+    font-size: 1.6rem;
     width: 90%;
     padding: 10px;
     height: 35px;
@@ -515,7 +525,7 @@ label {
     }
 }
 
-@media(max-width:890px) {
+@media(max-width:1002px) {
     .persona {
         display: none;
     }
